@@ -1,0 +1,14 @@
+Explications du diagramme :
+
+Voici le diagramme de flux représentant le cycle du jeu Snake. 
+
+Il montre les interactions principales :
+
+Le jeu commence avec l'affichage du plateau et du serpent.
+Les entrées utilisateur sont gérées pour changer la direction du serpent.
+Le serpent est mis à jour en fonction de la direction.
+Les collisions sont vérifiées :
+Si une collision est détectée avec un mur ou le corps du serpent, le jeu se termine.
+Sinon, on vérifie si un fruit est mangé.
+Si le fruit est mangé, le score augmente et un nouveau fruit est généré.
+Le processus revient à l'étape d'affichage, et le cycle continue.

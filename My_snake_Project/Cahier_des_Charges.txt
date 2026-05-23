@@ -1,0 +1,86 @@
+Cahier des Charges : Jeu Snake
+1. Objectif du Projet
+Créer un jeu Snake jouable en console, reprenant les mécanismes classiques. Le jeu doit être interactif, fluide, et offrir une gestion des scores pour motiver les joueurs.
+
+2. Fonctionnalités Essentielles
+Mouvement du serpent :
+
+Contrôler le serpent dans quatre directions : haut, bas, gauche, droite.
+Le serpent se déplace en continu tant qu'il n'y a pas d'entrée de l’utilisateur.
+Génération de fruits :
+
+Placer un fruit à une position aléatoire sur le plateau.
+Assurer que le fruit n'apparaît pas sur le corps du serpent.
+Augmentation de la taille :
+
+Lorsque le serpent mange un fruit, sa longueur augmente.
+Le score est également mis à jour.
+Gestion des collisions :
+
+Détection des collisions avec les murs ou avec le corps du serpent.
+Arrêter le jeu et afficher "Game Over" si une collision est détectée.
+Affichage :
+
+Le plateau et le serpent doivent être clairement visibles en console.
+Les éléments suivants doivent être affichés :
+Plateau de jeu.
+Corps du serpent.
+Fruit.
+Score.
+Gestion du score :
+
+Afficher le score en temps réel.
+Ajouter 10 points pour chaque fruit mangé.
+3. Contraintes Techniques
+Langage de programmation :
+
+Le jeu sera développé en langage C.
+Interface utilisateur :
+
+Console (pas d’interface graphique).
+Utilisation de caractères ASCII pour représenter les éléments (par exemple, O pour le serpent, * pour les fruits).
+Plateforme :
+
+Le jeu doit être compatible avec les environnements Windows, Linux, et Mac.
+Dimensions du plateau :
+
+Le plateau doit avoir une taille fixe, par exemple, 20x20 cellules.
+Temps réel :
+
+Le jeu doit s'exécuter avec un délai entre chaque déplacement pour permettre une expérience fluide.
+4. Gestion des Niveaux de Difficulté
+Ajouter une option pour choisir la difficulté en ajustant la vitesse du serpent :
+Facile : Déplacement lent.
+Moyen : Déplacement modéré.
+Difficile : Déplacement rapide.
+5. Cycle de Jeu
+Initialisation :
+
+Affichage du plateau initial.
+Positionnement du serpent et du fruit.
+Boucle principale :
+
+Dessiner le plateau.
+Prendre en compte l'entrée utilisateur (direction).
+Mettre à jour la position du serpent.
+Vérifier les collisions (mur, corps).
+Vérifier si le fruit est mangé :
+Mettre à jour la taille du serpent et le score.
+Générer un nouveau fruit.
+Répéter jusqu’à la détection d’une collision.
+Fin de jeu :
+
+Afficher un message "Game Over".
+Montrer le score final.
+Proposer une option pour rejouer ou quitter.
+6. Améliorations Futures
+Tableau des scores : Ajouter une fonctionnalité pour enregistrer les meilleurs scores.
+Niveaux progressifs : Augmenter automatiquement la vitesse à mesure que le score augmente.
+Personnalisation : Permettre aux joueurs de choisir la taille du plateau ou les symboles utilisés.
+7. Technologies et Outils
+Compilateur : GCC ou tout autre compilateur compatible avec le langage C.
+Éditeur de texte : Visual Studio Code, Code::Blocks, ou autre IDE.
+Bibliothèque standard : Utilisation des bibliothèques <stdio.h> et <stdlib.h> pour l’affichage et la gestion des entrées.
+8. Livraison
+Code source documenté.
+Diagramme de flux du cycle de jeu.
